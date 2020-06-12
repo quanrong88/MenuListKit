@@ -2,7 +2,7 @@ PODS:
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
-  - IGMenuListKit (0.0.4):
+  - IGMenuListKit (0.0.5):
     - IGListKit
 
 DEPENDENCIES:
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
-  IGMenuListKit: ff2cea3f07773705b2d52de1b1e3873a6b0ff0f5
+  IGMenuListKit: 0a2b734eab451b0bcfa4e4e6dab0e6883e94b949
 
 PODFILE CHECKSUM: 6068e2b6ff4691e42c3c53bacc73732cceebd760
 

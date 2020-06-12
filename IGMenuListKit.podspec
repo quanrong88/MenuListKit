@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IGMenuListKit'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'A fast way to create lists and menus in Swift'
   s.description      = 'A fast way to create lists and menus with declarative programming in Swift'
 
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/iGenius-Srl/MenuListKit.git', :tag => s.version.to_s }
 
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'MenuListKit/Classes/**/*'
 
