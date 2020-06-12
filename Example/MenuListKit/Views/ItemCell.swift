@@ -13,6 +13,7 @@ class ItemCell: UICollectionViewCell {
     fileprivate let label: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
+        label.textColor = .black
         label.numberOfLines = 0
         label.font = ItemCell.font
         return label
@@ -20,7 +21,7 @@ class ItemCell: UICollectionViewCell {
     
     let separator: CALayer = {
         let layer = CALayer()
-        layer.backgroundColor = UIColor(red: 200/255.0, green: 199/255.0, blue: 204/255.0, alpha: 1).cgColor
+        layer.backgroundColor = UIColor.lightGray.cgColor
         return layer
     }()
     
@@ -47,7 +48,7 @@ class ItemCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         let bounds = contentView.bounds
-        label.frame = UIEdgeInsetsInsetRect(bounds, ItemCell.insets)
+        label.frame = bounds.inset(by: ItemCell.insets)
         let height: CGFloat = 0.5
         let left = ItemCell.insets.left
         separator.frame = CGRect(x: left, y: bounds.height - height, width: bounds.width - left, height: height)

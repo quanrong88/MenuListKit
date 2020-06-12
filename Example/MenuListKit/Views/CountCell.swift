@@ -10,6 +10,7 @@ class CountCell: UICollectionViewCell {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
+        label.textColor = .black
         self.contentView.addSubview(label)
         return label
     }()
@@ -17,7 +18,7 @@ class CountCell: UICollectionViewCell {
     private lazy var button: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
-        label.textColor = UIColor.blue
+        label.textColor = .blue
         label.textAlignment = .center
         label.text = "Remove"
         self.contentView.addSubview(label)

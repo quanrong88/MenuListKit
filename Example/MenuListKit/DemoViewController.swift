@@ -26,6 +26,7 @@ class DemoViewController: UIViewController {
         
         adapter.collectionView = collectionView
         adapter.dataSource = self
+        collectionView.backgroundColor = UIColor(white: 0.9, alpha: 1)
         
         self.title = "Demos"
         

@@ -24,6 +24,7 @@ class EmptyViewController: UIViewController {
         label.textAlignment = .center
         label.text = "No more data!"
         label.backgroundColor = .clear
+        label.textColor = .black
         return label
     }()
     
@@ -94,7 +95,7 @@ extension EmptyViewController: MenuActionDelegate {
     
     func didSelect(item: BaseMenuItem) {
         guard let countItem = item as? CountItem else { return }
-        let index = data.index { $0.number == countItem.number }
+        let index = data.firstIndex { $0.number == countItem.number }
         guard let unwrappedIndex = index else { return }
         data.remove(at: unwrappedIndex)
         adapter.performUpdates(animated: true, completion: nil)
