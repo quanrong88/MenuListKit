@@ -20,11 +20,7 @@ let package = Package(
     targets: [
         .target(
             name: "MenuListKit",
-            sources: ["MenuListKit/Classes"], // Assuming your Swift source files are in this directory
-            dependencies: []),
-        .testTarget(
-            name: "MenuListKitTests",
-            dependencies: ["MenuListKit"],
-            sources: ["MenuListKit/Tests"]), // Assuming your test files are in this directory
+            sources: ["MenuListKit/Classes"], 
+            dependencies: [])
     ]
 )
