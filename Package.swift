@@ -19,7 +19,7 @@ let package = Package(
         .target(
             name: "IGMenuListKit",
             dependencies: [.product(name: "IGListKit", package: "IGListKit")],
-            path: "IGMenuListKit",
+            path: "MenuListKit/Classes",
             exclude: ["Info.plist"]
         )
     ]
