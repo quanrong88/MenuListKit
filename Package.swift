@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "IGListKit",
             url: "https://github.com/Instagram/IGListKit.git",
-            .branch("master")
+            .branch("main")
         )
     ],
     targets: [
