@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "IGListKit",
             url: "https://github.com/Instagram/IGListKit.git",
-            .upToNextMinor(from: "3.3.0")
+            .branch("master")
         )
     ],
     targets: [
@@ -28,4 +28,5 @@ let package = Package(
         )
     ]
 )
+
 
