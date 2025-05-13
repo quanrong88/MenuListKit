@@ -13,16 +13,12 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(
-            name: "IGListKit",
-            url: "https://github.com/Instagram/IGListKit.git",
-            .branch("main")
-        )
+        .package(url: "https://github.com/Instagram/IGListKit.git", .branch("main"))
     ],
     targets: [
         .target(
             name: "IGMenuListKit",
-            dependencies: ["IGListKit"],
+            dependencies: [.product(name: "IGListKit", package: "IGListKit")],
             path: "IGMenuListKit",
             exclude: ["Info.plist"]
         )
