@@ -1,24 +1,31 @@
-// swift-tools-version:5.0
-
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
-    name: "MenuListKit",
+    name: "IGMenuListKit",
     platforms: [
-        .iOS(.v11) // Adjust the minimum iOS version as needed
+        .iOS(.v9)
     ],
     products: [
         .library(
-            name: "MenuListKit",
-            targets: ["MenuListKit"]),
+            name: "IGMenuListKit",
+            targets: ["IGMenuListKit"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Instagram/IGListKit.git", from: "4.0.0"),
+        .package(
+            name: "IGListKit",
+            url: "https://github.com/Instagram/IGListKit.git",
+            .upToNextMinor(from: "3.3.0")
+        )
     ],
     targets: [
         .target(
-            name: "MenuListKit",
-            sources: ["MenuListKit/Classes"], 
-            dependencies: [])
+            name: "IGMenuListKit",
+            dependencies: ["IGListKit"],
+            path: "IGMenuListKit",
+            exclude: ["Info.plist"]
+        )
     ]
 )
+
